@@ -13,20 +13,14 @@ def eliminacao(n, a):
     if len(n_str) == 1:
         return 0 if n_str == f'{a}' else n_str
         
-
+        
     if n_str[0] == f'{a}':
         final =  eliminacao(n_str[1:], a)
-        if final[-1] == '0':
-            return final[:-1]
-        else:
-            return final
-        
+        return final[:-1] if final[-1] == '0' else final
+
     else: 
         final = n_str[0] + f'{eliminacao(n_str[1:], a)}'
-        if final[-1] == '0':
-            return final[:-1]
-        else:
-            return final
+        return final[:-1] if final[-1] == '0' else final
         
         
    
