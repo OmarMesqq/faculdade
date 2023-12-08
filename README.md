@@ -1,11 +1,14 @@
-# Lista de matérias 
+## Lista de matérias 
 
-## EQE-112  
+### EQE-112  
 Introdução ao Cálculo de Processos 
 
-## EQE-023  
+### EQE-023  
 Projetos Integradores
 
-## MAE-125
+### MAE-125
 Álgebra Linear II 
+
+### CTC4200 
+Modelagem e Programação 
 
