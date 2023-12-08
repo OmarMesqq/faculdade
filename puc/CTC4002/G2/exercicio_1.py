@@ -21,18 +21,14 @@ def pegaBicicletas(cor: str, diametro: int, lista: []):
     marcas = {}
     achado = False
 
-    for sublista in lista: 
-        if sublista[1] == cor and sublista[2] >= diametro: 
-            for marca in marcas: 
-                if marca == sublista[0]:
-                    achado = True 
-                    marcas[marca] += 1
-                    break 
-            if achado == False:
-                marcas[sublista[0]] = 1
+    for marca, cor_bicicleta, tamanho_aro in lista: 
+        if cor_bicicleta == cor and tamanho_aro >= diametro: 
+            if marca in marcas: 
+                marcas[marca] += 1
+            else: 
+                marcas[marca] = 1
 
-    return marcas 
-
+    return marcas
 
 
 corMock = 'azul'
